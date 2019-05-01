@@ -1,8 +1,8 @@
-package com.vaadin.flow.component.incubator.vaadincom;
+package com.vaadin.componentfactory.demo;
 
 /*
  * #%L
- * Vaadin IncubatorPaginator example for Vaadin 10
+ * Vaadin Paginator example for Vaadin 10
  * %%
  * Copyright (C) 2017 - 2018 Vaadin Ltd
  * %%
@@ -27,13 +27,13 @@ import org.jfairy.producer.person.Person;
 
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.H3;
-import com.vaadin.flow.component.incubator.Paginator;
+import com.vaadin.componentfactory.Paginator;
 import com.vaadin.flow.demo.DemoView;
 import com.vaadin.flow.router.Route;
 
 
 /**
- * Server-side component for the <code>incubator-paginator</code> element.
+ * Server-side component for the <code>vcf-paginator</code> element.
  *
  * @author Vaadin Ltd
  */

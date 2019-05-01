@@ -1,10 +1,10 @@
-package com.vaadin.flow.component.incubator;
+package com.vaadin.componentfactory;
 
 /*
  * #%L
- * Vaadin IncubatorPaginator for Vaadin 10
+ * Vaadin Paginator for Vaadin 10
  * %%
- * Copyright (C) 2017 - 2018 Vaadin Ltd
+ * Copyright (C) 2017 - 2019 Vaadin Ltd
  * %%
  * This program is available under Commercial Vaadin Add-On License 3.0
  * (CVALv3).
@@ -31,19 +31,19 @@ import com.vaadin.flow.templatemodel.TemplateModel;
 
 
 /**
- * Server-side component for the <code>incubator-paginator</code> element.
+ * Server-side component for the <code>vcf-paginator</code> element.
  *
  * @author Vaadin Ltd
  */
-@Tag("incubator-paginator")
-@HtmlImport("bower_components/incubator-paginator/src/incubator-paginator.html")
+@Tag("vcf-paginator")
+@HtmlImport("bower_components/vcf-paginator/src/vcf-paginator.html")
 public class Paginator extends PolymerTemplate<Paginator.PaginatorModel> implements HasSize {
 
     /**
      * Default constructor. Creates a Paginator.
      */
     public Paginator() {
-        getElement().synchronizeProperty("currentPage","incubator-paginator-page-change");
+        getElement().synchronizeProperty("currentPage","vcf-paginator-page-change");
         setNumberOfPages(1);
     }
 
@@ -156,7 +156,7 @@ public class Paginator extends PolymerTemplate<Paginator.PaginatorModel> impleme
      *
      * @return page current page
      */
-    @Synchronize("incubator-paginator-page-change")
+    @Synchronize("vcf-paginator-page-change")
     public int getCurrentPage() {
         return getModel().getCurrentPage();
     }
@@ -227,7 +227,7 @@ public class Paginator extends PolymerTemplate<Paginator.PaginatorModel> impleme
     /**
      * Paginator page change Event is created when the user clicks on a paginator's page.
      */
-    @DomEvent("incubator-paginator-page-change")
+    @DomEvent("vcf-paginator-page-change")
     public static class ChangeSelectedPage extends ComponentEvent<Paginator> {
         private int page;
 
@@ -253,7 +253,7 @@ public class Paginator extends PolymerTemplate<Paginator.PaginatorModel> impleme
 
 
     /**
-     * This model binds properties between Paginator and incubator-paginator.html
+     * This model binds properties between Paginator and vcf-paginator.html
      */
     public interface PaginatorModel extends TemplateModel {
         void setTotalPages(int number);

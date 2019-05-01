@@ -1,6 +1,6 @@
-# Incubator Paginator for Flow
+#Paginator
 
-Incubator Paginator for Flow is a UI component add-on for Vaadin 10.
+Paginator is a UI component add-on for Vaadin 10.
 
 [Live Demo ↗](https://incubator.app.fi/incubator-breadcrumb-demo)
 
@@ -64,7 +64,7 @@ The Demo can be run going to the project incubator-paginator-flow-vaadincom-demo
 
 This Add-on is distributed under [Commercial Vaadin Add-on License version 3](http://vaadin.com/license/cval-3) (CVALv3). For license terms, see LICENSE.txt.
 
-Incubator Paginator is written by Vaadin Ltd.
+Paginator is written by Vaadin Ltd.
 
 
 ## Setting up for development:
