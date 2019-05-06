@@ -1,30 +1,27 @@
-#Paginator
+# Component Factory Paginator for Vaadin 10+
 
-Paginator is a UI component add-on for Vaadin 10.
+This is server-side component of [&lt;vcf-paginator&gt;](https://github.com/vaadin-component-factory/vcf-paginator) Web Component.
+It displays full functioning paginator on a webpage.
 
-[Live Demo ↗](https://incubator.app.fi/incubator-breadcrumb-demo)
+[Live Demo ↗](https://incubator.app.fi/paginator-demo/paginator)
 
-[<img src="https://raw.githubusercontent.com/vaadin/incubator-paginator/master/screenshot.png" width="200" alt="Screenshot of incubator-paginator">](https://vaadin.com/directory/component/vaadinincubator-paginator)
+[<img src="https://raw.githubusercontent.com/vaadin/incubator-paginator/master/screenshot.png" width="400" alt="Screenshot of incubator-paginator">](https://vaadin.com/directory/component/vaadinincubator-paginator)
 
-[<img src="https://raw.githubusercontent.com/vaadin/incubator-paginator-flow/master/example.png" width="400" alt="Screenshot of incubator-paginator">](https://vaadin.com/directory/component/vaadinincubator-paginator)
 
-# What does the component do?
+## Usage
 
-Paginator is a Web Component providing an easy way to display a full functioning paginator on a webpage.
-
-# How is it used?
-
-A simple use of the paginator component would be the following.
-```java
+A simple use of the paginator component would be the following: create paginator, set total pages number, current page number 
+and optionally, text for first and last page buttons. Add paginator to page and add listener for change of selected page to paginator.
+```
 // 10 pages, current page 1
-Paginator paginator = new Paginator(10, 1, "beginning", "end");
+Paginator paginator = new Paginator(15, 1, "First", "Last");
 
 paginator.addChangeSelectedPageListener(event -> {
     h3.setText("Page: " + event.getPage());
 });
 ```
 
-## With a grid
+### With a grid
 The content of the grid can be displayed in a paginated way using the paginator.
 This requires some basic configuration of the grid and the paginator.
 
@@ -53,26 +50,12 @@ add(grid,gridPaginator);
 ```
 
 
-# How to run the demo?
-
-The Demo can be run going to the project incubator-paginator-flow-vaadincom-demo and executing the maven goal:
-
-```mvn jetty:run```
-
-
-## License & Author
-
-This Add-on is distributed under [Commercial Vaadin Add-on License version 3](http://vaadin.com/license/cval-3) (CVALv3). For license terms, see LICENSE.txt.
-
-Paginator is written by Vaadin Ltd.
-
-
 ## Setting up for development:
 
 Clone the project in GitHub (or fork it if you plan on contributing)
 
 ```
-git clone git@github.com/vaadin/incubator-paginator-flow.git
+git clone git@github.com/vaadin-component-factory/paginator.git
 ```
 
 To build and install the project into the local repository run 
@@ -82,3 +65,20 @@ To build and install the project into the local repository run
 in the root directory. `-DskipITs` will skip the integration tests, which require a TestBench license. If you want to run all tests as part of the build, run
 
 ```mvn install```
+
+## Demo
+
+The Demo can be run going to the project paginator-demo and executing the maven goal:
+
+```mvn jetty:run```
+
+
+# Vaadin Prime
+
+This component is available in Vaadin Prime subscription. It is still open source, but you need to have a valid CVAL license in order to use it. Read more at: https://vaadin.com/pricing
+
+# License & Author
+
+This Add-on is distributed under [Commercial Vaadin Add-on License version 3](http://vaadin.com/license/cval-3) (CVALv3). For license terms, see LICENSE.txt.
+
+Paginator is written by Vaadin Ltd.
