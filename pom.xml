@@ -40,8 +40,8 @@
 	</properties>
 
 	<modules>
-		<!--<module>paginator</module>-->
-		<!--<module>paginator-demo</module>-->
+		<module>paginator</module>
+		<module>paginator-demo</module>
 	</modules>
 	<repositories>
 		<repository>
