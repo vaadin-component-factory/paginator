@@ -73,12 +73,11 @@ The Demo can be run going to the project paginator-demo and executing the maven 
 ```mvn jetty:run```
 
 
-# Vaadin Prime
+## License & Author
 
-This component is available in Vaadin Prime subscription. It is still open source, but you need to have a valid CVAL license in order to use it. Read more at: https://vaadin.com/pricing
+This Add-on is distributed under Apache 2.0
 
-# License & Author
+Component Factory Paginator is written by Vaadin Ltd.
 
-This Add-on is distributed under [Commercial Vaadin Add-on License version 3](http://vaadin.com/license/cval-3) (CVALv3). For license terms, see LICENSE.txt.
-
-Paginator is written by Vaadin Ltd.
+### Sponsored development
+Major pieces of development of this add-on has been sponsored by multiple customers of Vaadin. Read more  about Expert on Demand at: [Support](https://vaadin.com/support) and  [Pricing](https://vaadin.com/pricing)
